@@ -8,6 +8,7 @@ Build a strong foundation in:
 
 * Large Language Models (LLMs)
 * LangChain
+* Prompt Engineering
 * Embedding Models
 * Retrieval-Augmented Generation (RAG)
 * Agentic AI
@@ -28,9 +29,11 @@ The objective is to understand both the theoretical concepts and practical imple
 * Open Source vs Closed Source Models
 * Chat Models
 * Prompt Templates
+* Chat Prompt Templates
+* Message Roles (System, Human, AI)
 * Output Parsers
 * Chains
-* LCEL
+* LCEL (LangChain Expression Language)
 * Embedding Models
 * Vector Databases
 * RAG Applications
@@ -107,17 +110,79 @@ Implemented:
 
 ---
 
+## Day 2
+
+### LangChain Prompt Templates
+
+Learned:
+
+* Prompt Engineering Fundamentals
+* PromptTemplate
+* ChatPromptTemplate
+* System Messages
+* Human Messages
+* AI Messages
+* Dynamic Variable Injection
+* Prompt Reusability
+* Structured Prompt Design
+
+### Implementations
+
+* Single Variable Prompt Templates
+* Multiple Variable Prompt Templates
+* Chat Prompt Templates
+* System + Human Message Workflows
+* Interactive Prompt UI using Streamlit
+* Prompt-based Chatbot
+
+### Concepts Practiced
+
+* Prompt Formatting
+* Context Injection
+* Role-Based Messaging
+* Dynamic Prompt Generation
+* Reusable Prompt Components
+
+### Technologies Used
+
+* Python
+* LangChain
+* Streamlit
+* OpenAI / Gemini APIs
+* Python Dotenv
+
+---
+
 # Repository Structure
 
 ```text
-langchainModel/
-├── 1.ChatModels/
-├── 2.EmbeddingModels/
+langchain/
+├── langchainModel/
+│   ├── 1.ChatModels/
+│   └── 2.EmbeddingModels/
+│
+├── langchainPrompt/
+│   ├── chatbot.py
+│   ├── messages.py
+│   ├── prompt_ui.py
+│   └── requirements.txt
+│
 ├── README.md
 └── requirements.txt
 ```
 
 ---
 
+# Current Status
 
-This repository will be updated daily as new concepts and implementations are completed.
+✅ Chat Models Completed
+
+✅ Embedding Models Completed
+
+✅ Prompt Templates Completed
+
+🔄 Next Topic: Output Parsers
+
+---
+
+This repository is updated daily as new concepts, projects, and implementations are completed throughout the GenAI and Agentic AI learning journey.
