@@ -1,0 +1,16 @@
+{
+    "title": "Student",
+    "type": "object",
+    "description": "A student record",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The name of the student"
+        },
+        "age": {
+            "type": "integer",
+            "description": "The age of the student"
+        }
+    },
+    "required": ["name", "age"]
+}

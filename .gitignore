@@ -9,6 +9,7 @@ venv/
 # Python Cache
 __pycache__/
 *.pyc
+*.pyo
 
 # VS Code
 .vscode/
@@ -19,3 +20,4 @@ __pycache__/
 # OS Files
 .DS_Store
 Thumbs.db
+desktop.ini

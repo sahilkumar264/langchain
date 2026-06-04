@@ -1,25 +1,30 @@
-# GenAI and Agentic AI Learning Journey
+#  GenAI & Agentic AI Learning Journey
 
-This repository documents my 2-week intensive learning journey focused on Generative AI, LangChain, and Agentic AI systems.
+This repository documents my intensive learning journey focused on **Generative AI, LangChain, and Agentic AI Systems**.
 
-## Goal
+The objective is to build practical AI Engineering skills through hands-on implementation of modern AI frameworks, workflows, and applications.
+
+---
+
+#  Learning Goals
 
 Build a strong foundation in:
 
 * Large Language Models (LLMs)
-* LangChain
 * Prompt Engineering
+* LangChain
 * Embedding Models
+* Output Parsing
+* Structured Outputs
 * Retrieval-Augmented Generation (RAG)
+* Vector Databases
 * Agentic AI
 * LangGraph
-* AI Workflows and Agents
-
-The objective is to understand both the theoretical concepts and practical implementation of modern AI application development.
+* AI Agents and Workflows
 
 ---
 
-# Learning Plan
+#  Learning Roadmap
 
 ## Week 1: Generative AI with LangChain
 
@@ -30,12 +35,14 @@ The objective is to understand both the theoretical concepts and practical imple
 * Chat Models
 * Prompt Templates
 * Chat Prompt Templates
-* Message Roles (System, Human, AI)
+* Message Roles
 * Output Parsers
+* Structured Outputs
 * Chains
 * LCEL (LangChain Expression Language)
 * Embedding Models
 * Vector Databases
+* FAISS
 * RAG Applications
 
 ---
@@ -55,134 +62,311 @@ The objective is to understand both the theoretical concepts and practical imple
 
 ---
 
-# Progress
+#  Daily Learning Log
 
-## Day 1
+| Day   | Topic                                    | Status |
+| ----- | ---------------------------------------- | ------ |
+| Day 1 | Chat Models & Embeddings                 | DONE      |
+| Day 2 | Prompt Templates & Chat Prompt Templates | DONE      |
+| Day 3 | Output Parsers & Structured Outputs      | DONE      |
+| Day 4 | Chains & LCEL                            | PROGRESS     |
+| Day 5 | Vector Databases (FAISS)                 | PENDING      |
+| Day 6 | RAG Applications                         | PENDING      |
+| Day 7 | Mini RAG Project                         | PENDING      |
 
-### LangChain Chat Models
+---
 
-Learned:
+#  Progress
+
+---
+
+# Day 1 — LLMs, Chat Models & Embeddings
+
+## Learned
+
+### LLM Fundamentals
 
 * What Large Language Models (LLMs) are
-* Difference between Open Source and Closed Source Models
-* How LangChain provides a unified interface for multiple model providers
-* Hugging Face integration with LangChain
+* Open Source vs Closed Source Models
+* Model Providers and APIs
+* Local vs Cloud Inference
 
-### Models Explored
+### Chat Models
 
-#### Open Source Models
+Implemented:
 
-* TinyLlama
-* Llama Models
-* Hugging Face Models
-
-#### Closed Source Models
-
-* OpenAI GPT Models
-* Google Gemini Models
-* Anthropic Claude Models
+* OpenAI Chat Models
+* Anthropic Chat Models
+* Google Gemini Chat Models
+* Hugging Face Chat Models
 
 ### Embedding Models
 
 Implemented:
 
-* HuggingFaceEmbeddings
+* OpenAI Embeddings
+* Hugging Face Embeddings
 * Sentence Transformers
-* Text Embeddings
-* Cosine Similarity Search
 
 ### Concepts Practiced
 
-* Chat Model Invocation
-* Local vs API-Based Models
 * Semantic Search
-* Vector Representations of Text
-* Similarity Retrieval
+* Cosine Similarity
+* Vector Embeddings
+* Document Similarity
 
 ### Technologies Used
 
 * Python
 * LangChain
 * Hugging Face
+* OpenAI
+* Google Gemini
 * Sentence Transformers
 * Scikit-Learn
-* Python Dotenv
 
 ---
 
-## Day 2
+# Day 2 — Prompt Templates
 
-### LangChain Prompt Templates
+## Learned
 
-Learned:
+### Prompt Engineering
 
-* Prompt Engineering Fundamentals
 * PromptTemplate
 * ChatPromptTemplate
+* Dynamic Variables
+* Prompt Reusability
+* Context Injection
+
+### Message Roles
+
 * System Messages
 * Human Messages
 * AI Messages
-* Dynamic Variable Injection
-* Prompt Reusability
-* Structured Prompt Design
 
 ### Implementations
 
 * Single Variable Prompt Templates
 * Multiple Variable Prompt Templates
 * Chat Prompt Templates
-* System + Human Message Workflows
-* Interactive Prompt UI using Streamlit
-* Prompt-based Chatbot
+* Prompt-Based Chatbot
+* Streamlit Prompt UI
 
 ### Concepts Practiced
 
 * Prompt Formatting
-* Context Injection
-* Role-Based Messaging
 * Dynamic Prompt Generation
-* Reusable Prompt Components
+* Role-Based Messaging
+* Context Management
 
 ### Technologies Used
 
 * Python
 * LangChain
 * Streamlit
-* OpenAI / Gemini APIs
-* Python Dotenv
+* OpenAI
+* Google Gemini
 
 ---
 
-# Repository Structure
+# Day 3 — Output Parsers & Structured Outputs
+
+## Learned
+
+### Output Parsers
+
+Understanding how LLM responses can be converted into structured and reliable formats.
+
+### Output Parsers Explored
+
+#### StrOutputParser
+
+Used for converting model responses into plain text strings.
+
+Implemented:
+
+* Prompt → Model → Parser Chains
+* LCEL Pipelines
+* Text Generation Workflows
+
+#### StructuredOutputParser
+
+Used for generating structured JSON outputs.
+
+Implemented:
+
+* ResponseSchema
+* Format Instructions
+* Structured JSON Responses
+
+#### PydanticOutputParser
+
+Used for validating LLM outputs using predefined schemas.
+
+Implemented:
+
+* Pydantic Models
+* Structured Data Validation
+* Field Extraction
+
+#### TypedDict Structured Outputs
+
+Implemented:
+
+* TypedDict Schemas
+* Type-Safe Responses
+* Structured Output Validation
+
+### Concepts Practiced
+
+* Output Parsing
+* Response Validation
+* Structured Response Generation
+* JSON Formatting
+* Type-Safe LLM Outputs
+
+### Technologies Used
+
+* Python
+* LangChain
+* Pydantic
+* TypedDict
+* Hugging Face
+
+---
+
+#  Repository Structure
 
 ```text
-langchain/
+LANGCHAIN/
+│
 ├── langchainModel/
-│   ├── 1.ChatModels/
-│   └── 2.EmbeddingModels/
+│   │
+│   ├── 1.LLMs/
+│   │   └── 1_llm_demo.py
+│   │
+│   ├── 2.ChatModels/
+│   │   ├── 1_chatmodel_openai.py
+│   │   ├── 2_chatmodel_anthropic.py
+│   │   ├── 3_chatmodel_google.py
+│   │   ├── 4_chatmodel_hf_api.py
+│   │   └── 5_chatmodel_hf_local.py
+│   │
+│   ├── 3.EmbeddingModels/
+│   │   ├── 1_embedding_openai_query.py
+│   │   ├── 2_embedding_openai_docs.py
+│   │   ├── 3_embedding_sentence_local.py
+│   │   └── 4_document_similarity.py
+│   │
+│   ├── .env
+│   └── requirements.txt
 │
 ├── langchainPrompt/
 │   ├── chatbot.py
 │   ├── messages.py
 │   ├── prompt_ui.py
+│   ├── .env
 │   └── requirements.txt
 │
-├── README.md
-└── requirements.txt
+├── langchainOutputParser/
+│   ├── stroutputparser.py
+│   ├── stroutputparser1.py
+│   ├── structureoutputparser.py
+│   ├── jsonoutputparser.py
+│   ├── pydanticoutputparser.py
+│   ├── .env
+│   └── requirements.txt
+│
+├── langchainStructureOutput/
+│   ├── json_schema.json
+│   ├── pydantic.py
+│   ├── typedic_demo.py
+│   ├── with_struct_json.py
+│   ├── with_struct_pydantic.py
+│   ├── with_struct_type_dic.py
+│   ├── .env
+│   └── requirements.txt
+│
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-# Current Status
+#  Current Status
 
-✅ Chat Models Completed
+Completed:
 
-✅ Embedding Models Completed
+* LLM Fundamentals
+* Chat Models
+* Embedding Models
+* Prompt Templates
+* Chat Prompt Templates
+* Message Roles
+* Output Parsers
+* Structured Outputs
 
-✅ Prompt Templates Completed
+Currently Learning:
 
-🔄 Next Topic: Output Parsers
+* Chains
+* LCEL (LangChain Expression Language)
 
 ---
 
-This repository is updated daily as new concepts, projects, and implementations are completed throughout the GenAI and Agentic AI learning journey.
+#  Upcoming Topics
+
+## Week 1 Remaining
+
+* Chains
+* LCEL
+* RunnableSequence
+* RunnableParallel
+* RunnablePassthrough
+* FAISS
+* Vector Stores
+* RAG Applications
+
+## Week 2
+
+* Agents
+* Tool Calling
+* LangGraph Fundamentals
+* Multi-Agent Systems
+* Memory
+* Agent Workflows
+* Human-in-the-Loop Systems
+* End-to-End Agentic AI Applications
+
+---
+
+#  Technologies Used
+
+* Python
+* LangChain
+* LangGraph
+* Hugging Face
+* OpenAI
+* Anthropic
+* Google Gemini
+* Sentence Transformers
+* Scikit-Learn
+* Streamlit
+* Pydantic
+* TypedDict
+
+---
+
+#  End Goal
+
+Build production-oriented AI Engineering skills through practical implementation of:
+
+* LLM Applications
+* Prompt Engineering
+* Embedding Systems
+* RAG Pipelines
+* AI Agents
+* LangGraph Workflows
+* End-to-End AI Applications
+
+This repository is updated continuously as new concepts, implementations, and projects are completed throughout the learning journey.
