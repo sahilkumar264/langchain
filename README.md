@@ -13,6 +13,7 @@ Build a strong foundation in:
 * Large Language Models (LLMs)
 * Prompt Engineering
 * LangChain
+* Prompt Engineering
 * Embedding Models
 * Output Parsing
 * Structured Outputs
@@ -35,7 +36,11 @@ Build a strong foundation in:
 * Chat Models
 * Prompt Templates
 * Chat Prompt Templates
+
 * Message Roles
+
+* Message Roles (System, Human, AI)
+
 * Output Parsers
 * Structured Outputs
 * Chains
@@ -127,6 +132,7 @@ Implemented:
 
 ---
 
+
 # Day 2 — Prompt Templates
 
 ## Learned
@@ -145,6 +151,22 @@ Implemented:
 * Human Messages
 * AI Messages
 
+## Day 2
+
+### LangChain Prompt Templates
+
+Learned:
+
+* Prompt Engineering Fundamentals
+* PromptTemplate
+* ChatPromptTemplate
+* System Messages
+* Human Messages
+* AI Messages
+* Dynamic Variable Injection
+* Prompt Reusability
+* Structured Prompt Design
+
 ### Implementations
 
 * Single Variable Prompt Templates
@@ -152,6 +174,10 @@ Implemented:
 * Chat Prompt Templates
 * Prompt-Based Chatbot
 * Streamlit Prompt UI
+* System + Human Message Workflows
+* Interactive Prompt UI using Streamlit
+* Prompt-based Chatbot
+
 
 ### Concepts Practiced
 
@@ -159,12 +185,17 @@ Implemented:
 * Dynamic Prompt Generation
 * Role-Based Messaging
 * Context Management
+* Context Injection
+* Role-Based Messaging
+* Dynamic Prompt Generation
+* Reusable Prompt Components
 
 ### Technologies Used
 
 * Python
 * LangChain
 * Streamlit
+<<<<<<< HEAD
 * OpenAI
 * Google Gemini
 
@@ -261,6 +292,19 @@ LANGCHAIN/
 │   │
 │   ├── .env
 │   └── requirements.txt
+=======
+* OpenAI / Gemini APIs
+* Python Dotenv
+
+---
+
+# Repository Structure
+
+```text
+langchain/
+├── langchainModel/
+│   ├── 1.ChatModels/
+│   └── 2.EmbeddingModels/
 │
 ├── langchainPrompt/
 │   ├── chatbot.py
@@ -290,9 +334,15 @@ LANGCHAIN/
 │
 ├── .gitignore
 └── README.md
+│   └── requirements.txt
+│
+├── README.md
+└── requirements.txt
+
 ```
 
 ---
+
 
 #  Current Status
 
@@ -370,3 +420,10 @@ Build production-oriented AI Engineering skills through practical implementation
 * End-to-End AI Applications
 
 This repository is updated continuously as new concepts, implementations, and projects are completed throughout the learning journey.
+
+🔄 Next Topic: Output Parsers
+
+---
+
+This repository is updated daily as new concepts, projects, and implementations are completed throughout the GenAI and Agentic AI learning journey.
+
