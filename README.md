@@ -36,11 +36,8 @@ Build a strong foundation in:
 * Chat Models
 * Prompt Templates
 * Chat Prompt Templates
-
 * Message Roles
-
 * Message Roles (System, Human, AI)
-
 * Output Parsers
 * Structured Outputs
 * Chains
@@ -195,7 +192,6 @@ Learned:
 * Python
 * LangChain
 * Streamlit
-<<<<<<< HEAD
 * OpenAI
 * Google Gemini
 
@@ -267,6 +263,76 @@ Implemented:
 
 ---
 
+# Day 4 — Chains & LCEL Runnables
+
+## Learned
+
+### Chains
+
+Understanding how multiple LangChain components can be connected together to build complete AI workflows.
+
+Implemented:
+
+* Prompt → Model → Parser Chains
+* Sequential Chains
+* Chain Composition
+* End-to-End LLM Pipelines
+
+### LCEL (LangChain Expression Language)
+
+Learned how LangChain uses LCEL to build modular and composable AI workflows.
+
+Implemented:
+
+#### RunnableSequence
+
+Used for executing components sequentially.
+
+Implemented:
+
+* Prompt → Model → Parser Workflow
+* Multi-Step Execution Pipelines
+
+#### RunnableParallel
+
+Used for executing multiple chains simultaneously.
+
+Implemented:
+
+* Parallel LLM Calls
+* Multi-Output Generation
+* Concurrent Workflow Execution
+
+#### RunnablePassthrough
+
+Used for passing original inputs alongside generated outputs.
+
+Implemented:
+
+* Input Preservation
+* Context Passing
+* Data Enrichment Pipelines
+
+### Concepts Practiced
+
+* Chain Composition
+* Sequential Execution
+* Parallel Execution
+* LCEL Syntax
+* Runnable Interfaces
+* Pipeline Design
+* Workflow Orchestration
+
+### Technologies Used
+
+* Python
+* LangChain
+* Hugging Face
+* Pydantic
+* LCEL
+
+---
+
 #  Repository Structure
 
 ```text
@@ -332,6 +398,20 @@ langchain/
 │   ├── .env
 │   └── requirements.txt
 │
+├── langchainChain/
+│   │
+│   ├── simple_chain.py
+│   ├── sequential_chain.py
+│   ├── parallel_chain.py
+│   ├── runnableparallel.py
+│   ├── runnablepassthrough.py
+│   ├── runnablesequence.py
+│   ├── conditional_chain.py
+│   ├── aam-zindgi.py
+│   ├── requirements.txt
+│   ├── .env
+│   └── venv/
+|
 ├── .gitignore
 └── README.md
 │   └── requirements.txt
@@ -356,11 +436,19 @@ Completed:
 * Message Roles
 * Output Parsers
 * Structured Outputs
-
-Currently Learning:
-
 * Chains
 * LCEL (LangChain Expression Language)
+
+Remaining
+
+* Document Loaders
+* Text Splitters
+* Embedding Pipelines
+* Vector Databases
+* FAISS
+* Vector Stores
+* Retrieval-Augmented Generation (RAG)
+* Mini RAG Project
 
 ---
 
@@ -368,8 +456,6 @@ Currently Learning:
 
 ## Week 1 Remaining
 
-* Chains
-* LCEL
 * RunnableSequence
 * RunnableParallel
 * RunnablePassthrough
@@ -421,9 +507,6 @@ Build production-oriented AI Engineering skills through practical implementation
 
 This repository is updated continuously as new concepts, implementations, and projects are completed throughout the learning journey.
 
-🔄 Next Topic: Output Parsers
+ Next Topic: Document Loader , Text Splitter
 
 ---
-
-This repository is updated daily as new concepts, projects, and implementations are completed throughout the GenAI and Agentic AI learning journey.
-
