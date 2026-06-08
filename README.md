@@ -574,6 +574,6 @@ Build production-oriented AI Engineering skills through practical implementation
 
 This repository is updated continuously as new concepts, implementations, and projects are completed throughout the learning journey.
 
- Next Topic: Document Loader , Text Splitter
+ Next Topic: vector  , retriever
 
 ---
