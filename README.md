@@ -333,6 +333,64 @@ Implemented:
 
 ---
 
+## Day 5 – Document Loaders
+
+### Topics Covered
+
+- Introduction to Document Loaders
+- Loading text files using `TextLoader`
+- Loading PDF documents using `PyPDFLoader`
+- Loading web pages using `WebBaseLoader`
+- Extracting content from different data sources
+- Understanding the role of document loading in RAG pipelines
+
+### Files Created
+
+- `textloader.py`
+- `pypdfloader.py`
+- `webbaseloader.py`
+
+### Key Learnings
+
+- Learned how LangChain loads data from various sources into a standardized document format.
+- Understood the difference between text, PDF, and web-based document loading.
+- Explored document metadata and page content extraction.
+- Built the foundation required for embeddings and retrieval systems.
+
+### Outcome
+
+Successfully loaded and processed documents from local files, PDFs, and websites using LangChain Document Loaders.
+
+---
+
+## Day 6 – Text Splitters
+
+### Topics Covered
+
+- Introduction to Text Splitting
+- Why chunking is important for LLM applications
+- `CharacterTextSplitter`
+- `RecursiveCharacterTextSplitter`
+- Chunk Size and Chunk Overlap
+- Length-Based Text Splitting
+
+### Files Created
+
+- `lengthbased.py`
+
+### Key Learnings
+
+- Learned how large documents are divided into smaller chunks before generating embeddings.
+- Understood the impact of chunk size and overlap on retrieval quality.
+- Explored different text splitting strategies available in LangChain.
+- Prepared documents for efficient storage in vector databases.
+
+### Outcome
+
+Successfully implemented text chunking techniques and understood their importance in Retrieval-Augmented Generation (RAG) systems.
+
+---
+
 #  Repository Structure
 
 ```text
@@ -412,6 +470,19 @@ langchain/
 │   ├── .env
 │   └── venv/
 |
+├── textSplitter 
+│   ├── lengthbased.py 
+│   ├── requirements.txt 
+|   └── venv/
+|
+├── documentLoader 
+│   ├── cricket.txt 
+│   ├── pypdfloader.py 
+│   ├── textloader.py 
+│   ├── webbaseloader.py 
+│   ├── requirements.txt 
+│   └── venv/
+|
 ├── .gitignore
 └── README.md
 │   └── requirements.txt
@@ -438,11 +509,11 @@ Completed:
 * Structured Outputs
 * Chains
 * LCEL (LangChain Expression Language)
+* Document Loaders
+* Text Splitters
 
 Remaining
 
-* Document Loaders
-* Text Splitters
 * Embedding Pipelines
 * Vector Databases
 * FAISS
@@ -456,10 +527,6 @@ Remaining
 
 ## Week 1 Remaining
 
-* RunnableSequence
-* RunnableParallel
-* RunnablePassthrough
-* FAISS
 * Vector Stores
 * RAG Applications
 
